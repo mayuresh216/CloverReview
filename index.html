@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <form id="studentForm">
+        <input type="hidden" id="studentId">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="text" id="dob" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" readonly>
+        <br>
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <br>
+        <label for="aadhaar">Aadhaar Card No:</label>
+        <input type="text" id="aadhaar" required>
+        <br>
+        <label for="phone">Phone No:</label>
+        <input type="text" id="phone" required>
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+        <br>
+        <button type="submit" id="addButton">Add Student</button>
+        <button type="button" id="updateButton" style="display: none;">Update Student</button>
+    </form>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Aadhaar</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student records will be added here dynamically -->
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
